@@ -47,21 +47,27 @@
         }
         //Q6
         document.write("<h1>Q6</h1>")
-        const s1 = prompt("Enter 1st subject","Maths");
-        const s2 = prompt("Enter 2nd subject","Biology");
-        const s3 = prompt("Enter 3rd subject","History");
-        const totmarks = 100;
+        const s1 = prompt("Enter 1st subject", "Maths");
+        const s2 = prompt("Enter 2nd subject", "Biology");
+        const s3 = prompt("Enter 3rd subject", "History");
+        const totmarks = 250;
         const s1m = parseInt(prompt("Enter marks in 1st subject"));
         const s2m = parseInt(prompt("Enter marks in 2nd subject"));
         const s3m = parseInt(prompt("Enter marks in 3rd subject"));
         const per1 = (s1m / totmarks) * 100
         const per2 = (s2m / totmarks) * 100
         const per3 = (s3m / totmarks) * 100
-        document.write(" <tr><td><h4>Subject  </h4></td><td><h4>T.Marks  </h4></td><td><h4>Obt.Marks  </h4></td><td><h4>Per</h4></td><tr><br><td>", s1, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp",totmarks, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", s1m, "</td><td>","&nbsp&nbsp&nbsp&nbsp&nbsp", per1, "</td></tr><br>")
-        document.write(s2, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp",totmarks, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", s2m, "</td><td>","&nbsp&nbsp&nbsp&nbsp&nbsp", per2,"<br>")
-        document.write(s3, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp",totmarks, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", s3m, "</td><td>","&nbsp&nbsp&nbsp&nbsp&nbsp", per3,"<br>")
-        document.write("</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp",totmarks*3, "</td><td>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp", s1m+s2m+s3m, "</td><td>","&nbsp&nbsp&nbsp&nbsp&nbsp", (s1m+s2m+s3m)/3)
-        </script>
+        document.getElementById("first").innerHTML = s1
+        document.getElementById("second").innerHTML = s2
+        document.getElementById("third").innerHTML = s3
+        document.getElementById("tmarks").innerHTML = totmarks
+        document.getElementById("omarks1").innerHTML=s1m
+        document.getElementById("omarks2").innerHTML=s2m
+        document.getElementById("omarks3").innerHTML=s3m
+        document.getElementById("per1").innerHTML=parseInt(per1)+"%"
+        document.getElementById("per2").innerHTML=parseInt(per2)+"%"
+        document.getElementById("per3").innerHTML=parseInt(per3)+"%"
+    </script>
 
 </body>
 
