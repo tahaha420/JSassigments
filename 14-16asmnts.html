@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-16 Assignments</title>
+</head>
+
+<body>
+    <script>
+        //Q1
+        const stdnames = [];  //Literal Method
+        document.write("<br>")
+        //Q2
+        const stdnames2 = new Array(); //Object method
+        document.write("<br>")
+        //Q3
+        const strgs = ["abc", 'def']
+        document.write("<br>")
+        document.write("<br>")
+        //Q4
+        const numbs = [1, 2, 3]
+        document.write("<br>")
+        //Q5
+        const bool = [true, false]
+        document.write("<br>")
+        //Q6
+        const mixed = ["abc", 75, false]
+        //Q7
+        document.write("<h1>Q7</h1>")
+        const qual = ["SSC", "HSC", "BSCS", "PHD", "MS"]
+        document.write("1)", qual[0], "<br>")
+        document.write("2)", qual[1], "<br>")
+        document.write("3)", qual[2], "<br>")
+        document.write("4)", qual[3], "<br>")
+        document.write("5)", qual[4], "<br>")
+        //Q8
+        document.write("<h1>Q8</h1>")
+        const stdnames1 = ['Taha', 'Shayan', 'Musadiq']
+        const totmarks = 500
+        const stdmarks = [450, 480, 500]
+        document.write("Score of ", stdnames1[0], ".Percentage: ", (stdmarks[0]) / 5, "%<br>")
+        document.write("Score of ", stdnames1[1], ".Percentage: ", (stdmarks[1]) / 5, "%<br>")
+        document.write("Score of ", stdnames1[2], ".Percentage: ", (stdmarks[2]) / 5, "%<br>")
+        //Q9
+        document.write("<h1>Q9</h1>")
+        const colors = ["red", "green", "blue"]
+        const ncolor = prompt("Enter color to add at beginning")
+        colors.unshift(ncolor)
+        document.write(colors, "<br>")
+        const ncolor2 = prompt("Enter a color to add at end")
+        colors.push(ncolor2)
+        document.write(colors, "<br>")
+        colors.unshift("rose pink", "lightgreen")
+        document.write(colors, "<br>")
+        document.write(colors.shift(), "<br>")
+        document.write(colors.pop(), "<br>")
+        const ncolor3 = prompt("Enter new color to add")
+        const indx = prompt("Where do you want to place it")
+        document.write(colors.splice(indx, 0, ncolor3), "<br>")
+        const indx2 = prompt("which index do you want to delete")
+        const num4 = prompt("how many colors do you want to delete")
+        document.write(colors.splice(indx2, num4, 0))
+        //Q10
+        document.write("<h1>Q10</h1>")
+        const stdmarks1=[57,84,24,75,55,59]
+        document.write("Ordered:", stdmarks1,"<br>")
+        const m = stdmarks1.sort()
+        document.write("Unordered:", m)
+        //Q11
+        document.write("<h1>Q11</h1>")
+        document.write("<br>")
+        const cities = ["Karachi", "Islamabad", "Quetta", "Peshawar", "Lahore"]
+        const selected_cities = cities.slice(2)
+        document.write(selected_cities)
+        //Q12
+        document.write("<h1>Q12</h1>")
+        document.write("<br>")
+        var arr = ["This", "is", "my", "cat"]
+        document.write(arr.join(' '))
+        //Q13
+        document.write("<h1>Q13</h1>")
+        document.write("<br>")
+        var newarr = ["keyboard", "mouse", "monitor", "printer"]
+        document.write(newarr[0], "<br>")
+        document.write(newarr[1], "<br>")
+        document.write(newarr[2], "<br>")
+        document.write(newarr[3], "<br>")
+        //Q14
+        document.write("<h1>Q14</h1>")
+        var newarr = ["keyboard", "mouse", "monitor", "printer"]
+        newarr.reverse()
+        document.write(newarr[0], "<br>")
+        document.write(newarr[1], "<br>")
+        document.write(newarr[2], "<br>")
+        document.write(newarr[3], "<br>")
+        //Q15
+        document.write("<h1>Q15</h1>")
+        document.write("<br>")
+        const mnfs = ["Apple", "Samsung", "Nokia", "Sony", "Haier"]
+    </script>
+    <label for="mnfs">Choose a Brand:</label>
+
+    <select name="mobiles" id="brands">
+        <option id="apple">Apple</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Nokia">Nokia</option>
+        <option value="Sony">Sony</option>
+        <option value="Haier">Haier</option>
+    </select>
+</body>
+
+</html>
